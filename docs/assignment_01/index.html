@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Header & Footer</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a href="#home" class="brand">Nile Course</a>
+
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <label for="nav-toggle" class="nav-toggle__label" aria-label="Toggle navigation">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </label>
+
+          <nav class="nav" aria-label="Primary Navigation">
+            <div class="nav__header">
+              <span class="nav__title">Menu</span>
+              <label for="nav-toggle" class="nav-close" aria-label="Close navigation"></label>
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="?to=home#home">Home</a></li>
+              <li class="nav__item"><a class="nav__link" href="?to=about#about">About</a></li>
+              <li class="nav__item"><a class="nav__link" href="?to=projects#projects">Projects</a></li>
+              <li class="nav__item"><a class="nav__link" href="?to=contact#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <label for="nav-toggle" class="nav-overlay" aria-label="Close navigation"></label>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="hero" id="home">
+          <h1 class="hero__title">Responsive Header & Footer Demo</h1>
+          <p class="hero__subtitle">Resize the window to see the behavior across devices.</p>
+          <a href="#get-started" class="btn btn--primary">Get Started</a>
+        </section>
+
+        <section class="section" id="about">
+          <h2 class="section__title">About</h2>
+          <p class="section__text">This is the About section.</p>
+        </section>
+
+        <section class="section" id="projects">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__text">This is the Projects section.</p>
+        </section>
+
+        <section class="section" id="contact">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__text">This is the Contact section.</p>
+        </section>
+
+        <section class="placeholder">
+          <div class="placeholder__box">Main content area</div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer__inner">
+          <div class="footer__brand">Nile Web Dev</div>
+          <div class="footer__links">
+            <a class="footer__link" href="#privacy">Privacy</a>
+            <a class="footer__link" href="#terms">Terms</a>
+            <a class="footer__link" href="#support">Support</a>
+          </div>
+          <div class="footer__copy">© 2025 All rights reserved.</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
